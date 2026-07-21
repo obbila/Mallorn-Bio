@@ -1,5 +1,7 @@
 ---
-import '@fontsource-variable/inter';
+import '@fontsource/cormorant-garamond/400.css';
+import '@fontsource/cormorant-garamond/500.css';
+import '@fontsource/cormorant-garamond/600.css';
 
 // 'DM Sans'
 // Nunito
@@ -22,22 +24,35 @@ import '@fontsource-variable/inter';
 <style is:inline>
   :root {
     --aw-font-sans: 'Inter Variable';
-    --aw-font-serif: 'Inter Variable';
-    --aw-font-heading: 'Inter Variable';
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    --aw-font-serif: 'Cormorant Garamond';
 
-    --aw-color-text-heading: rgb(0 0 0);
-    --aw-color-text-default: rgb(16 16 16);
-    --aw-color-text-muted: rgb(16 16 16 / 66%);
-    --aw-color-bg-page: rgb(255 255 255);
+    --aw-font-heading: 'Cormorant Garamond';
 
-    --aw-color-bg-page-dark: rgb(3 6 32);
+    /* Brand Colours */
+
+    --aw-color-primary: rgb(50 75 59); /* Forest Green #324B3B */
+
+    --aw-color-secondary: rgb(31 49 39); /* Dark Forest #1F3127 */
+
+    --aw-color-accent: rgb(184 153 76); /* Gold #B8994C */
+
+    /* Text */
+
+    --aw-color-text-heading: rgb(38 50 42); /* #26322A */
+
+    --aw-color-text-default: rgb(38 50 42);
+
+    --aw-color-text-muted: rgb(108 116 110);
+
+    /* Background */
+
+    --aw-color-bg-page: rgb(252 251 248); /* Warm ivory */
 
     ::selection {
-      background-color: lavender;
+      background-color: rgb(184 153 76);
+
+      color: white;
     }
   }
 

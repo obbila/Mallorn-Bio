@@ -1,0 +1,19 @@
+---
+import Button from '~/components/ui/Button.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+---
+
+<WidgetWrapper id="contact" containerClass="max-w-none py-20 text-center md:py-24">
+  <Fragment slot="bg"><div class="absolute inset-0 bg-primary"></div></Fragment>
+  <div class="mx-auto max-w-3xl text-white">
+    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent">Get in touch</p><h2
+      class="mt-5 font-heading text-4xl sm:text-5xl"
+    >
+      Interested in the future of resilient agriculture?
+    </h2><p class="mt-5 text-lg text-white/80">
+      We welcome conversations with farmers, researchers, collaborators and investors.
+    </p><div class="mt-8">
+      <Button text="Contact Mallorn Bio" href="/contact" variant="secondary" class="px-6 py-3" />
+    </div>
+  </div>
+</WidgetWrapper>

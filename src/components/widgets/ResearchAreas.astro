@@ -1,0 +1,34 @@
+---
+import { Icon } from 'astro-icon/components';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+const areas = [
+  ['tabler:leaf', 'Soil Biology'],
+  ['tabler:heart-rate-monitor', 'Plant Health'],
+  ['tabler:git-branch', 'Fungal Networks'],
+  ['tabler:dna-2', 'Environmental DNA'],
+  ['tabler:brain', 'AI & Predictive Biology'],
+  ['tabler:satellite', 'Remote Sensing'],
+];
+---
+
+<WidgetWrapper id="research" containerClass="py-20 md:py-28">
+  <div class="text-center">
+    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent">Research areas</p><h2
+      class="mt-5 font-heading text-4xl text-heading sm:text-5xl"
+    >
+      A connected view of farm biology.
+    </h2>
+  </div>
+  <div class="mx-auto mt-12 grid max-w-5xl grid-cols-2 gap-4 md:grid-cols-3">
+    {
+      areas.map(([icon, label]) => (
+        <div class="flex min-h-36 flex-col items-center justify-center border border-[#e6e1d5] bg-[#f7f5ef] p-5 text-center">
+          <>
+            <Icon name={icon} class="h-7 w-7 text-accent" />
+            <p class="mt-4 font-medium text-heading">{label}</p>
+          </>
+        </div>
+      ))
+    }
+  </div>
+</WidgetWrapper>
